@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+}
+
+main {
+  background-image: url(bg-intro-desktop.png);
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+}
+
+.first-flex {
+  color: white;
+  margin-right: 2rem;
+  width: 50%;
+}
+
+.first-flex h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.second-flex {
+  width: 50%;
+}
+
+.first-flex p {
+  white-space: pre;
+}
+
+.paragraph {
+  width: 100%;
+  color: aliceblue;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 1rem;
+}
+
+.center {
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.center form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.txt_field input {
+  margin: 1rem 0;
+  padding: 0.6rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.button {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: hsl(154, 59%, 51%);
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.button:hover,
+.button:active {
+  background-color: red;
+  cursor: pointer;
+}
+
+.Terms {
+  display: flex;
+  margin: 1rem;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-term {
+  color: hsl(154, 59%, 51%);
+  white-space: nowrap;
+}
+
+.second-term {
+  color: hsl(0, 100%, 74%);
+  white-space: nowrap;
+}
+
+@media (max-width: 375px) {
+  main {
+    display: block;
+    background-image: url("bg-intro-mobile (1).png");
+    width: 100vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-flex {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  .first-flex p {
+    white-space: pre-wrap;
+    width: 100%;
+  }
+
+  .second-flex {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  .Terms {
+    display: block;
+    width: 50%;
+  }
+
+  .first-term {
+    color: hsl(154, 59%, 51%);
+    white-space: pre-wrap;
+  }
+
+  .second-term {
+    color: hsl(0, 100%, 74%);
+    white-space: wrap;
+  }
+}
